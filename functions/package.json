@@ -1,0 +1,36 @@
+{
+  "name": "mvp-cloud-functions-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MVP GCP Cloud Functions Template",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "lint": "eslint --ext .js --cache",
+    "lint:fresh": "eslint",
+    "lint:fix": "eslint --ext .js --cache --fix",
+    "lint:ci": "eslint --ext .js"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalswietek/mvp-cloud-functions-template.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/rafalswietek/mvp-cloud-functions-template#readme",
+  "dependencies": {
+    "firebase-admin": "9.3.0",
+    "firebase-functions": "3.11.0"
+  },
+  "devDependencies": {
+    "@rafalswietek/eslint-config": "git+https://git@github.com/rafalswietek/eslint-config.git",
+    "eslint": "7.7.0",
+    "eslint-config-airbnb-base": "14.2.0"
+  }
+}
